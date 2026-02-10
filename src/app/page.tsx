@@ -76,6 +76,26 @@ export default function Home() {
                     <option value="smoke">Smoke & Odor Removal</option>
                     <option value="emergency">24/7 Emergency</option>
                   </select>
+                  <input
+                    type="text"
+                    placeholder="Zip Code"
+                    inputMode="numeric"
+                    pattern="[0-9]{5}"
+                    maxLength={5}
+                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:border-white/50"
+                  />
+                  <div className="flex items-start gap-3">
+                    <input
+                      type="checkbox"
+                      id="hero-optin"
+                      name="optin"
+                      defaultChecked
+                      className="mt-1 h-4 w-4 text-sky-500 border-white/30 rounded focus:ring-sky-500"
+                    />
+                    <label htmlFor="hero-optin" className="text-sm text-blue-200">
+                      I agree to receive text messages and calls regarding my inquiry. Message and data rates may apply.
+                    </label>
+                  </div>
                   <button type="submit" className="w-full bg-sky-500 hover:bg-sky-600 text-white font-semibold py-4 rounded-lg transition">
                     Get My Free Quote
                   </button>
@@ -506,7 +526,7 @@ export default function Home() {
                 </div>
                 <input type="tel" placeholder="Phone Number" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500" />
                 <input type="email" placeholder="Email Address" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500" />
-                <input type="text" placeholder="Property Address" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500" />
+                <input type="text" placeholder="Zip Code" inputMode="numeric" pattern="[0-9]{5}" maxLength={5} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500" />
                 <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-600">
                   <option value="">Service Needed</option>
                   <option value="fire">Fire Damage Restoration</option>
@@ -519,6 +539,18 @@ export default function Home() {
                   <option value="emergency">Emergency Service</option>
                 </select>
                 <textarea placeholder="Tell us about your situation..." rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"></textarea>
+                <div className="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    id="contact-optin"
+                    name="optin"
+                    defaultChecked
+                    className="mt-1 h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                  />
+                  <label htmlFor="contact-optin" className="text-sm text-gray-600">
+                    I agree to receive text messages and calls regarding my inquiry. Message and data rates may apply.
+                  </label>
+                </div>
                 <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 rounded-lg transition">
                   Get My Free Quote
                 </button>
