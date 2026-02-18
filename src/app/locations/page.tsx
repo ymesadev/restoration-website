@@ -4,8 +4,8 @@ import { locations, getLocationsByRegion } from "@/data/locations";
 import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
-  title: "Service Areas | Property Restoration Throughout Florida | FloridaRestorePros",
-  description: "FloridaRestorePros provides professional fire, water, mold, and roofing restoration services throughout Florida. Find restoration services in Miami, Orlando, Fort Lauderdale, and more.",
+  title: "Service Areas | Property Restoration in South Florida | FloridaRestorePros",
+  description: "FloridaRestorePros provides professional fire, water, mold, and roofing restoration services across South Florida. Serving Miami-Dade, Broward, and Palm Beach counties.",
 };
 
 export default function LocationsPage() {
@@ -18,9 +18,9 @@ export default function LocationsPage() {
 
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 pt-24 pb-16 lg:pt-32 lg:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Service Areas Throughout Florida</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">South Florida Service Areas</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Professional property restoration from the Panhandle to the Keys. Fire, water, mold, and roofing services in your area.
+            Professional property restoration across Miami-Dade, Broward, and Palm Beach counties. Fire, water, mold, and roofing services in your area.
           </p>
         </div>
       </section>
@@ -93,7 +93,7 @@ export default function LocationsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Local Expertise Matters</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Florida&apos;s diverse regions each have unique restoration challenges</p>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">South Florida&apos;s tri-county area has unique restoration challenges</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl p-6 shadow-md">
@@ -103,7 +103,7 @@ export default function LocationsPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Regional Climate Knowledge</h3>
-              <p className="text-gray-600 text-sm">From South Florida&apos;s tropical humidity to North Florida&apos;s seasonal patterns, we understand your local restoration needs.</p>
+              <p className="text-gray-600 text-sm">South Florida&apos;s tropical humidity, hurricane exposure, and coastal environment create unique restoration challenges we understand.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md">
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
@@ -129,8 +129,8 @@ export default function LocationsPage() {
 
       <section className="py-16 bg-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Don&apos;t See Your Area?</h2>
-          <p className="text-xl text-blue-100 mb-8">We serve all of Florida. Contact us to confirm service in your area.</p>
+          <h2 className="text-3xl font-bold text-white mb-4">Need Restoration Help in South Florida?</h2>
+          <p className="text-xl text-blue-100 mb-8">We serve all of Miami-Dade, Broward, and Palm Beach counties. Call for a free assessment.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/#contact" className="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-4 rounded-lg transition shadow-lg">Get Free Quote</Link>
             <a href="tel:9542310508" className="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-lg transition border border-white/30">Call (954) 231-0508</a>
@@ -162,7 +162,7 @@ export default function LocationsPage() {
               <ul className="space-y-2 text-sm">
                 <li><Link href="/locations/miami" className="hover:text-blue-400 transition">Miami</Link></li>
                 <li><Link href="/locations/fort-lauderdale" className="hover:text-blue-400 transition">Fort Lauderdale</Link></li>
-                <li><Link href="/locations/orlando" className="hover:text-blue-400 transition">Orlando</Link></li>
+                <li><Link href="/locations/west-palm-beach" className="hover:text-blue-400 transition">West Palm Beach</Link></li>
                 <li><Link href="/locations" className="hover:text-blue-400 transition">All Locations</Link></li>
               </ul>
             </div>
